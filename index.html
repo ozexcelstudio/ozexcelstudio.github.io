@@ -352,7 +352,7 @@ footer { border-top: 1px solid var(--grid); background: var(--sheet); }
               <span class="val">Will Respond In Due Course</span>
             </div>
           </div>
-          <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
+          <form id="contact-form" action="https://formspree.io/f/moeenryp" method="POST" novalidate>
             <input type="hidden" name="_subject" value="New enquiry from ozexcelstudio website">
             <p hidden><label for="gotcha">Leave this empty</label><input id="gotcha" name="_gotcha" tabindex="-1" autocomplete="off"></p>
             <div class="field-row">
@@ -401,7 +401,7 @@ footer { border-top: 1px solid var(--grid); background: var(--sheet); }
     if (!name || !body || !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) {
       say("Please add your name, a valid email address and a short message."); return;
     }
-    if (form.action.indexOf("https://formspree.io/f/moeenryp") !== -1) {
+    if (form.action.indexOf("YOUR_FORM_ID") !== -1) {
       say("The contact form isn't connected yet. Please try again later."); return;
     }
     btn.disabled = true; btn.textContent = "Sending…";
